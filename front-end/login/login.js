@@ -87,9 +87,9 @@ var check = function() {
     if (document.getElementById('password').value ==
       document.getElementById('confirm_password').value) {
       document.getElementById('control_message').style.color = 'green';
-      document.getElementById('control_message').innerHTML = 'password corretta';
+      document.getElementById('control_message').innerHTML = 'PASSWORD MATCH';
     } else {
       document.getElementById('control_message').style.color = 'red';
-      document.getElementById('control_message').innerHTML = 'password errata';
+      document.getElementById('control_message').innerHTML = 'PASSWORD MISMATCH';
     }
   }

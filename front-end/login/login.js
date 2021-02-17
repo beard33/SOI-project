@@ -15,7 +15,7 @@ function login(){
 }
 
 /* controllo inserimento password */
-var myInput = document.getElementById("password");
+/*var myInput = document.getElementById("password");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
@@ -79,12 +79,13 @@ myInput.onkeyup = function() {
         document.getElementById('control_message').innerHTML = 'password errata';
         check_password = false;
     }
-}
+}*/
+
 
 /* funzione per il controllo sul reinserimento della password */
 var check = function() {
     if (document.getElementById('password').value ==
-      document.getElementById('confirm_password').value && check_password == true) {
+      document.getElementById('confirm_password').value) {
       document.getElementById('control_message').style.color = 'green';
       document.getElementById('control_message').innerHTML = 'password corretta';
     } else {

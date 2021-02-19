@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;    
 }
 
 
 .hero{
     height: 100%;
     width: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url(pics/banner.jpg);
+    background:#204b53;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -23,15 +23,15 @@
     background: #fff;
     padding: 5px;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 6px;
 }
 
 .button-box{
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff612f1f;
-    border-radius: 30px;
+    box-shadow: 0 0 20px 9px #52b5b53f;
+    border-radius: 6px;
 }
 
 .toggle-button{
@@ -43,14 +43,20 @@
     position: relative;
 }
 
+
+#switch-login{
+    color: whitesmoke;
+}
+
+
 #button{
     top: 0;
     left: 0;
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right, #ff105f, #ffad06);
-    border-radius: 30px;
+    background: linear-gradient(to right, #204b53, #63949d);
+    border-radius: 6px;
     transition: .5s;
 }
 
@@ -71,27 +77,30 @@
     border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
-
 }
 
 .submit-button{
     width: 85%;
+    color: whitesmoke;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(to right, #ff105f, #ffad06);
+    background: linear-gradient(to right, #204b53, #63949d);
     border: 0;      
     outline:none;
-    border-radius: 30px;
+    border-radius: 6px;
 }
-
 #login{
     left: 50px;
 }
 
 #register{
     left:450px;
+}
+
+#control_message {
+    font-size: 15px;
 }

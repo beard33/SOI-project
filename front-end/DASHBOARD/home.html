@@ -6,37 +6,34 @@
     <title>Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="hero">
-    <div class="navigation-bar">
-      <ul>
-      <li><a class="active" href="#home">Crea progetto</a></li>
-      <li><a href="#news">Elimina Selezionati</a></li>
-      <li style="float:right"><a href="#about">Log Out</a></li>
-      </ul>
-    </div>
-
+ 
+  <div id="greets">Hi, Username</div>
+  <div id="navbar">
+    <ul>
+      <li><a href="#">New project</a></li>
+      <li><a href="#">Delete selected</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
   <div class="list-project">
     <h3>Elenco Progetti Disponibili</h3>
-
     <div class="projects"></div>
   </div>
 
-  <script type="text/html" id="task-template">
-    <div class="project-left">
-      <input type="checkbox" id="" name="">
-      <label for="" class="task-item"></label>
-    </div>
-  
-    <div class="project-right">
-      <button class="task-btn" name="remove" title="Edit this task">Elimina</button>
-      <button class="task-btn" name="complete" title="Complete this task">Visualizza</button>
-    </div>
-  </script>
+  <!--
+  <div class="project-left">
+    <input type="checkbox" id="" name="">
+    <label for="" class="task-item"></label>
+  </div>
 
-
-
-</body>
+  <div class="project-right">
+    <button class="task-btn" name="remove" title="Edit this task">Elimina</button>
+    <button class="task-btn" name="complete" title="Complete this task">Visualizza</button>
+  </div>
+  -->
+  </body>
 
 </html>

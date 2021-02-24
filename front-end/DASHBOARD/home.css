@@ -34,7 +34,7 @@
 }
   
 #navbar ul li a:hover {
-    color:#add3ae;
+    color: #71c3d1;;
     text-shadow:0px 2px 1px #204b53; 
 }
 
@@ -51,7 +51,60 @@
     padding: 20px 45px;
     border-radius: 6px;
     border: 1px solid #204b53;
-    background-color: #edf0f2;
+    background-color: #f7f7f7;
     margin: 10px auto 0;
     width: auto;
+}
+
+
+#title {
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #204b53;
+    font-style: italic;
+}
+
+.list-project div{
+    width: 40%;
+    position: inherit;
+    height: 70%;
+    padding-top: 2%;
+    padding-left: 20%;
+    font-size: 18px;
+    color: #5a5a5a;
+}
+
+#project-type label{
+    margin-right: 20%;
+    color: #5a5a5a;
+    
+}
+
+
+#project-type p, #project-title p, #project-files p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #204b53;
+    padding-bottom: 3%;
+}
+
+#project-title input {
+    padding: 5px 5px;
+    font-size: 15px;
+}
+
+#confirm-project button{
+    font-size: 18px;
+    width: 55%;
+    color: white;
+    background-color: #204b53;
+    border-color: #204b53;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#confirm-project :hover{
+    background-color: #63949d;
+    border-color: #63949d;
 }

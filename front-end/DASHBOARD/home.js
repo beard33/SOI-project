@@ -4,7 +4,8 @@ $(document).ready(function() {
         event.preventDefault();
 
         $('#title').html("Create new project");
-        $('.list-project').append(
+
+        $('.template').empty().append(
             `<div id="project-title">
                 <p>Project name:</p>
                 <input name="project-name" type="text" size="40" placeholder="Project name" required>

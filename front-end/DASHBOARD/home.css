@@ -1,3 +1,5 @@
+/* General style for all elements */
+
 *{
     margin:auto;
     font-family: 'Helvetica', sans-serif;
@@ -11,6 +13,8 @@
     margin-left:50px;
 }
 
+/* NAVBAR */
+
 #navbar{
     height:100px;
     width:100%;
@@ -21,22 +25,6 @@
 #navbar ul {
     list-style:none;
 }
-  
-#navbar ul li a{
-    text-decoration:none;
-    float:left;
-    padding:20px 2px;
-    text-align:center;
-    color:#ecf0f1;
-    margin-right:70px;
-    margin-top:15px;
-    font-size:25px;
-}
-  
-#navbar ul li a:hover {
-    color: #71c3d1;;
-    text-shadow:0px 2px 1px #204b53; 
-}
 
 #navbar ul li {
     float:left;
@@ -44,8 +32,30 @@
 
 #navbar ul {
     float: right;
-  }
+}
   
+#navbar ul li a{
+    text-decoration:none;
+    float:left;
+    padding:20px 2px;
+    text-align:center;
+    color:#dfdfdf;
+    margin-right:70px;
+    margin-top:15px;
+    font-size:25px;
+}
+  
+#navbar ul li a:hover {
+    color: #fff;;
+    text-shadow:0px 2px 1px #204b53; 
+}
+
+#navbar ul li a.active {
+    text-decoration: underline;
+    color: #fafac4;
+}
+
+/* HOME */
 
 .list-project{
     padding: 20px 45px;
@@ -73,6 +83,8 @@
     font-size: 18px;
     color: #5a5a5a;
 }
+
+/* NEW PROJECT */
 
 #project-type label{
     margin-right: 20%;

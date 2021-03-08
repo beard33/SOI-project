@@ -4,7 +4,7 @@ $(document).ready(function() {
 })
 
 function renderPage() {
-    const pageName = (window.location.hash);
+    let pageName = location.hash;
     switch (pageName) {
         case '#new-project':
             renderNewProject();
@@ -17,8 +17,8 @@ function renderPage() {
 
 function renderNewProject(){
     $('#title').html("Create new project");
-    $('#new-project-btn').css('text-decoration', 'underline').css('color', '#e7e7c8');;
-    $('#home-btn').css('text-decoration', 'none').css('color', '#ecf0f1');
+    $('#new-project-btn').addClass("active");
+    $('#home-btn').removeClass('active');
 
     $('.page').empty().append(
         `<div id="project-title">
@@ -44,7 +44,7 @@ function renderNewProject(){
 
 function renderHome(){
     $('#title').html("Project list");
-    $('#new-project-btn').css('text-decoration', 'none').css('color', '#ecf0f1');
-    $('#home-btn').css('text-decoration', 'underline').css('color', '#e7e7c8');
+    $('#new-project-btn').removeClass("active");
+    $('#home-btn').addClass('active');
     $('.page').empty();
 }

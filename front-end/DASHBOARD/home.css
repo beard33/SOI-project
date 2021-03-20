@@ -74,14 +74,12 @@
     font-style: italic;
 }
 
-.page div{
-    width: 40%;
-    position: inherit;
-    height: 70%;
-    padding-top: 2%;
-    padding-left: 20%;
-    font-size: 18px;
-    color: #5a5a5a;
+.page .project{
+    text-align: center;
+    width: 50%;
+    padding-left: 0%;
+    font-weight: bold;
+    padding-bottom: 1%;
 }
 
 /* NEW PROJECT */
@@ -89,9 +87,17 @@
 #project-type label{
     margin-right: 20%;
     color: #5a5a5a;
-    
 }
 
+.page div{
+    width: 50%;
+    position: inherit;
+    height: 70%;
+    padding-top: 2%;
+    padding-left: 20%;
+    font-size: 18px;
+    color: #5a5a5a;
+}
 
 #project-type p, #project-title p, #project-files p {
     font-weight: bold;
@@ -101,16 +107,17 @@
 }
 
 #project-title input {
-    padding: 5px 5px;
+    padding: 1% 1%;
     font-size: 15px;
+    width: 55%;
 }
 
 #confirm-project button{
     font-size: 18px;
-    width: 55%;
+    width: 58%;
     color: white;
     background-color: #204b53;
-    border-color: #204b53;
+    border:none;
     padding: 5px;
     border-radius: 6px;
     cursor: pointer;
@@ -118,5 +125,5 @@
 
 #confirm-project :hover{
     background-color: #63949d;
-    border-color: #63949d;
+    border: none;
 }

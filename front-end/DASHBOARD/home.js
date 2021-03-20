@@ -1,21 +1,27 @@
-$(document).ready(function() {
-    renderPage();
-    $(window).on('hashchange', renderPage);
-})
+$(document).ready(function(){
+    $("#home-btn").on('click', renderHome);
+    $("#new-project-btn").on('click', renderNewProject); 
+    window.addEventListener('popstate', () => {
+        let link = location.pathname.replace(/^.*[\\/]/, ""); 
+        switch (link) {
+            case 'home': {
+                renderHome()
+                break;
+            }
+            case 'new-project': {
+                renderNewProject();
+                break;
+            }
+        }
+    })
+});
 
-function renderPage() {
-    let pageName = location.hash;
-    switch (pageName) {
-        case '#new-project':
-            renderNewProject();
-            break;
-        case '#home':
-            renderHome();
-            break;
+function renderNewProject(ev){
+    if (ev) { 
+        ev.preventDefault();
+        history.pushState({id:1}, 'new-project', '/new-project');
     }
-}
-
-function renderNewProject(){
+    $(document).prop('title','New Project')
     $('#title').html("Create new project");
     $('#new-project-btn').addClass("active");
     $('#home-btn').removeClass('active');
@@ -42,9 +48,26 @@ function renderNewProject(){
     );
 }
 
-function renderHome(){
+function renderHome(ev){
+    if (ev){
+        ev.preventDefault()
+        history.pushState({id:1}, 'home', '/home');
+    }
+    $(document).prop('title','Home')
     $('#title').html("Project list");
     $('#new-project-btn').removeClass("active");
     $('#home-btn').addClass('active');
-    $('.page').empty();
+    $('.page').empty().append(
+        `<div class="project"> Project 1</div>
+        <div class="project"> Project 2</div>
+        <div class="project"> Project 3</div>
+        <div class="project"> Project 4</div>
+        <div class="project"> Project 5</div>
+        <div class="project"> Project 6</div>`
+    );
 }
+
+
+
+
+   

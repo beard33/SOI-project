@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/static/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -14,17 +14,15 @@
   <div id="greets">Hi, Username</div>
   <div id="navbar">
     <ul>
-      <li><a href="#home" id="home-btn">Home</a></li>
-      <li><a href="#new-project" id="new-project-btn">New project</a></li>
-      <li><a href="#">Logout</a></li>
+      <li><a href="/" class="nav-button" data-link>Home</a></li>
+      <li><a href="/new-project" class="nav-button" data-link>New project</a></li>
+      <li><a href="/logout">Logout</a></li>
     </ul>
   </div>
-  <div class="list-project">
-    <h3 id="title">Project list</h3>
-    <div class="page"></div>
-  </div>
+  <div class="page">
   
-  <script src="home.js"></script>
+  </div>
+  <script type="module" src="/static/js/home.js"></script>
 
   </body>
 
